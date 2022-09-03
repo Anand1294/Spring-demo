@@ -13,5 +13,10 @@ pipeline {
                 }
             }
         }
+        stage ('Getting Param') {
+            steps {
+                echo ${Name}
+            }
+        }
     }
 }
